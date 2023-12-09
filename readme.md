@@ -1,6 +1,6 @@
-#DENNIS - Dynamic ENdpoint Network Interface Switchover
+# DENNIS - Dynamic ENdpoint Network Interface Switchover
 
-##Some Background
+## Some Background
 
 This project started with a very specific use case in mind
 
@@ -11,12 +11,12 @@ Yes, I added **ENpoint** to the acronym so it spells out Dennis.
 
 Also uses Telegram for alerts.
 
-##Use Case
+## Use Case
 I have a primary IP address which I require a guaranteed level of availability. This script is able to check the status of the interface with the primary IP - and when it finds out that it is down, it assigns the IP to another interface and restarts NetworkManager
 
 *It works with NetworkManager only.*
 
-##Config Files
+## Config Files
 The folder **sample_conf** contains sample configuration files. 
 Simply rename it to **conf** and put in the relevant infos to start
 
@@ -30,22 +30,22 @@ Here's a list of info that you will need:
 
 Here's what you need to change in the config files:
 
-#####conf/current_status
+##### conf/current_status
 - Name of Primary Interface
 - Name of Secondary Interface
 
-#####conf/DENNIS.conf
+##### conf/DENNIS.conf
 - Name of Primary Interface
 - Name of Secondary Interface
 - Static IP of Primary Interface
 - Static IP of Secondary Interface
 
-#####conf/telg_token
+##### conf/telg_token
 - Telegram bot API token
 
-#####conf/telg_chatid
+##### conf/telg_chatid
 - Chat ID of the Telegram Group to receive alerts
 
-#####nmconnection files
+##### nmconnection files
 Last but not least, you will also need to provide your nmconnection files, which contains the NetworkManager connection profile - two samples have been provided under sample_conf/ directory
 Do remember to name them primary.nmconnection and secondary.nmconnection!
