@@ -1,0 +1,15 @@
+1	Auto-kill the previous process when executing runme 
+	(it is very annoying to have to ps aux the previous process)
+	maybe add argument to start stop or restart
+
+2	Limit the log size [IN PROGRESS]
+	(or create a new log file each day)
+
+3	Encrypt the token file
+
+4	Self recovery DR [COMPLETED]
+	set secondary adapter to primary IP
+
+5	expand config files to include 
+	the location of the nmconnection files, and other stuff	
+	Just make it more configurable
